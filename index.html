@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" 
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />    
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.2/dist/axios.min.js"></script>
     <title>My Weather App</title>
 </head>
 <body>
+  <div class="weather-app">
     <header> 
       <form class="search-form" id="search-form">
          <input 
@@ -27,11 +36,13 @@
         <br />
         Humidity: 66%, Wind: 3.13km/h
       </p>
-     </div class="weather-app-temperature-container">
+     </div>
+     <div class="weather-app-temperature-container">
       <div class="weather-app-icon">⛅</div>
       <div class="weather-app-temperature">12</div>
       <div class="weather-app-unit">°C</div>
      </div>
+    
     </main>
 
     <footer>This project was coded by 
@@ -40,6 +51,7 @@
         <a href="https://github.com/fsauls66220-sys/my-weather-app.git" target="_blank">open-sourced on GitHub</a> and 
         <a href="https://my-fsauls-weather-app.netlify.app/" target="_blank"> hosted on Netlify</a>.
     </footer>
+    </div>
   <script src="index.js"></script>
  </body>
 </html>
